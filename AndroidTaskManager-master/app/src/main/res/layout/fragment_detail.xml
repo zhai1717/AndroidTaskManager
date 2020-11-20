@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:id="@+id/detail_label_title"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/detail_title"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        tools:text="这是一个标题"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toEndOf="@id/detail_label_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/detail_label_title"
+        app:layout_constraintBottom_toBottomOf="@id/detail_label_title"/>
+
+    <TextView
+        android:id="@+id/detail_label_startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:text="@string/startTime"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_label_title"
+        app:layout_constraintTop_toBottomOf="@id/detail_label_title"/>
+
+    <TextView
+        android:id="@+id/detail_startTime"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="15dp"
+        tools:text="2019-11-10 00:00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/detail_label_startTime"
+        app:layout_constraintTop_toTopOf="@id/detail_label_startTime"
+        app:layout_constraintBottom_toBottomOf="@id/detail_label_startTime"/>
+
+    <TextView
+        android:id="@+id/detail_label_endTime"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:text="@string/endTime"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_label_title"
+        app:layout_constraintTop_toBottomOf="@id/detail_label_startTime"/>
+
+    <TextView
+        android:id="@+id/detail_endTime"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="15dp"
+        tools:text="2019-12-10 00:00:00"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/detail_label_endTime"
+        app:layout_constraintTop_toTopOf="@id/detail_label_endTime"
+        app:layout_constraintBottom_toBottomOf="@id/detail_label_endTime"/>
+
+    <TextView
+        android:id="@+id/detail_label_level"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:text="@string/level"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_label_title"
+        app:layout_constraintTop_toBottomOf="@id/detail_label_endTime"/>
+
+    <TextView
+        android:id="@+id/detail_level"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="15dp"
+        tools:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/detail_label_level"
+        app:layout_constraintTop_toTopOf="@id/detail_label_level"
+        app:layout_constraintBottom_toBottomOf="@id/detail_label_level"/>
+
+    <TextView
+        android:id="@+id/detail_label_completeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:text="@string/status"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="@id/detail_label_title"
+        app:layout_constraintTop_toBottomOf="@id/detail_label_level"/>
+
+    <TextView
+        android:id="@+id/detail_completeStatus"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:textSize="24sp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:paddingLeft="15dp"
+        tools:text="50%"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/detail_label_completeStatus"
+        app:layout_constraintTop_toTopOf="@id/detail_label_completeStatus"
+        app:layout_constraintBottom_toBottomOf="@id/detail_label_completeStatus"/>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:id="@+id/detail_contentLayout"-->
+<!--        android:paddingLeft="25dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/detail_edit"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/detail_completeStatus"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/detail_label_content"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:text="@string/content"-->
+<!--            android:gravity="center"-->
+<!--            android:layout_marginTop="15dp" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/detail_content"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:gravity="center_vertical"-->
+<!--            android:textColor="#000"-->
+<!--            android:paddingLeft="15dp"-->
+<!--            tools:text="zeshi hishidhaneirongyi" />-->
+
+<!--    </RelativeLayout>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/detail_label_content"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:textSize="24sp"-->
+<!--        android:text="@string/content"-->
+<!--        android:gravity="center"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        app:layout_constraintEnd_toEndOf="@id/detail_label_title"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/detail_completeStatus"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/detail_content"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="24sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/detail_label_content"-->
+<!--        app:layout_constraintStart_toEndOf="@id/detail_label_content"-->
+<!--        app:layout_constraintTop_toTopOf="@id/detail_label_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        tools:text="zeshi hishidhaneirongyi" />-->
+
+    <Button
+        android:id="@+id/detail_edit"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="编辑"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/detail_delete"
+        />
+
+    <Button
+        android:id="@+id/detail_delete"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="删除"
+        app:layout_constraintLeft_toRightOf="@id/detail_edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

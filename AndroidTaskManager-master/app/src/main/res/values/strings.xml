@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+
+    <string name="title">任务标题</string>
+    <string name="startTime">开始时间</string>
+    <string name="endTime">结束时间</string>
+    <string name="level">任务等级</string>
+    <string name="status">完成情况</string>
+    <string name="content">任务内容</string>
+
+</resources>
